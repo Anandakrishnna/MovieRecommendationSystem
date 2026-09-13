@@ -1,6 +1,6 @@
 # Virtual environments
 .venv/
-.venv-1/
+.venv-*/
 venv/
 ENV/
 
@@ -12,3 +12,8 @@ __pycache__/
 
 # Streamlit secrets (contains private API keys)
 .streamlit/secrets.toml
+
+# IDE & OS temporary files
+.vscode/
+.idea/
+.DS_Store

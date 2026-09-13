@@ -1,17 +1,17 @@
-# 🎬 Movie Recommendation System
+#  Movie Recommendation System
 
 A content-based Movie Recommendation System that suggests movies similar to a user-selected title. Built with **Python**, **Scikit-learn**, and **Streamlit**, the application leverages TMDB metadata, converts metadata tags into numerical feature vectors using **TF-IDF Vectorization**, and computes similarity scores using **Cosine Similarity**. High-resolution movie posters are retrieved concurrently via the **TMDB API**.
 
 ---
 
-## 🔗 Quick Links
+##  Quick Links
 
-- ⭐ **Live Application**: [https://movierecommendationsystem-awsfzsgrrgfcgh2elpcvg9.streamlit.app/](https://movierecommendationsystem-awsfzsgrrgfcgh2elpcvg9.streamlit.app/)
+-  **Live Application**: [https://movierecommendationsystem-awsfzsgrrgfcgh2elpcvg9.streamlit.app/](https://movierecommendationsystem-awsfzsgrrgfcgh2elpcvg9.streamlit.app/)
 - 💻 **GitHub Repository**: [https://github.com/Anandakrishnna/MovieRecommendationSystem](https://github.com/Anandakrishnna/MovieRecommendationSystem)
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - **Content-Based Recommendation Engine**: Recommends movies by analyzing metadata proximity across genres, keywords, top cast members, and directors.
 - **TF-IDF Text Vectorization**: Transforms unstructured textual metadata into high-dimensional vector representations while penalizing overly frequent words.
@@ -22,7 +22,7 @@ A content-based Movie Recommendation System that suggests movies similar to a us
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 The recommendation pipeline converts raw movie metadata into similarity scores through the following architecture:
 
@@ -48,7 +48,7 @@ flowchart TD
 
 ---
 
-## 🔬 Recommendation Approach
+##  Recommendation Approach
 
 ### 1. Feature Engineering
 Movie attributes are combined into a single text representation:
@@ -81,7 +81,7 @@ When a user selects a movie:
 
 ---
 
-## 🖥️ Streamlit Application Interface
+##  Streamlit Application Interface
 
 The web interface provides an intuitive user journey:
 1. **Movie Selection**: Select any movie title from the searchable dropdown menu.
@@ -91,7 +91,7 @@ The web interface provides an intuitive user journey:
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 > [!NOTE]
 > Add application screenshots to the `screenshots/` directory to display visual previews.
@@ -102,7 +102,7 @@ The web interface provides an intuitive user journey:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Role & Purpose |
 | :--- | :--- |
@@ -117,7 +117,7 @@ The web interface provides an intuitive user journey:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 MovieRecommendationSystem/
@@ -136,7 +136,7 @@ MovieRecommendationSystem/
 
 ---
 
-## 🚀 Installation & Local Setup
+##  Installation & Local Setup
 
 ### 1. Clone the Repository
 Ensure [Git LFS](https://git-lfs.com/) is installed to pull the serialized model binary (`movie_data.pkl`):
@@ -180,7 +180,7 @@ TMDB_API_KEY = "your_actual_tmdb_api_key_here"
 
 ---
 
-## ▶️ Running the App Locally
+##  Running the App Locally
 
 Execute the Streamlit application runner:
 
@@ -195,7 +195,7 @@ http://localhost:8501
 
 ---
 
-## ☁️ Deployment
+##  Deployment
 
 The application is deployed on **Streamlit Community Cloud**:
 - Deployed Live App: [https://movierecommendationsystem-awsfzsgrrgfcgh2elpcvg9.streamlit.app/](https://movierecommendationsystem-awsfzsgrrgfcgh2elpcvg9.streamlit.app/)
@@ -203,7 +203,7 @@ The application is deployed on **Streamlit Community Cloud**:
 
 ---
 
-## 📊 Project Scope & Limitations
+##  Project Scope & Limitations
 
 - **Content-Based Nature**: Recommendations are derived purely from metadata similarity (genres, plot keywords, cast, director). The system does not capture user rating preferences or collaborative behavior ("users who watched X also watched Y").
 - **Dataset Boundaries**: The system covers movies present in the TMDB 5000 dataset (~4,800 movies up to 2017). Newly released movies require dataset updates and matrix re-computation.
@@ -211,7 +211,7 @@ The application is deployed on **Streamlit Community Cloud**:
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - **Hybrid Filtering**: Integrate Collaborative Filtering (User-Item Matrix Factorization or LightFM) with Content-Based scores.
 - **Semantic Embeddings**: Upgrade text representations from TF-IDF to dense transformer embeddings (`all-MiniLM-L6-v2` via SentenceTransformers).
@@ -220,7 +220,7 @@ The application is deployed on **Streamlit Community Cloud**:
 
 ---
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 This project demonstrates core competencies in:
 - End-to-end Machine Learning workflow (data cleaning -> feature engineering -> similarity modeling -> pickle serialization).
